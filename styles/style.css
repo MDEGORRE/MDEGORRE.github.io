@@ -1,11 +1,165 @@
 body {
-    padding:1em;
+    font-family: 'Inter';
+    background-color: #EAFFF1;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Style CSS Index */
+
+header {
+    padding: 2em;
+    height: 5vh;
+    display: flex;
+    margin: auto 0;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+header h1 span {
+    font-size: 2.5rem;
+}
+
+.nav_listlink {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav_link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.15rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav a:visited {
+    color:inherit;
+}
+
+.nav_link-white {
+    color:black;
+    text-decoration-color: black;
+}
+
+.nav_link-purple {
+    color:rebeccapurple;
+    text-decoration-color: rebeccapurple;
+}
+
+.nav_link-red {
+    color:rgb(192, 10, 10);
+    text-decoration-color: rgb(192, 10, 10);
+}
+
+.nav_link-green {
+    color:rgb(13, 116, 13);
+    text-decoration-color: rgb(13, 116, 13);
 }
 
 main {
     background-color: #f3f3f3;
 }
 
-footer {
+.WebLanguages {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(217,167,187,1) 50%, rgba(70,146,162,1) 90%);
     text-align: center;
+    background-color: #d4d0d0;
+    padding: 1rem;
+}
+
+.WebLanguages h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.WebLanguages-images {
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    height: 100px;
+    padding: 1.5rem 0;
+}
+
+/* CSS Style CV Page*/
+
+.main_cv {
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* CSS Style CV Page: Partie gauche */
+
+.container-left {
+    width: 25%;
+}
+
+.container-left-image {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.container-left h2 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin: 2rem 0;
+}
+
+.container-left strong {
+    font-weight: bold;
+}
+
+.container-left p {
+    margin: 1rem 0;
+}
+
+.container-right {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* CSS Style CV Page: Partie droite */
+
+.container-right h1 {
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.container-right h2 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin: 1.5rem 0;
+}
+
+.container-right p, .container-right li {
+    margin: 1rem 0;
+}
+
+/* Footer Style */
+
+footer {
+    background-color: black;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    text-align: center;
+    color:white;
+    padding: 0.5rem;
 }

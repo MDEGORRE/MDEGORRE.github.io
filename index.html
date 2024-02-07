@@ -5,31 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Michael Degorre: my website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Michael Degorre: Homepage</title>
 </head>
 <body>
 
     <header>
-        <p>&#x1F1EB;&#x1F1F7; Michaël Degorre</p>
-        <p>En formation de développement web</p>
-        <ul>
-            <li>CV</li>
-            <li>Projets</li>
-            <li>Contact</li>
-        </ul>
+        <h1><span>M</span>ichaël</h1>      
+        <nav class="header_nav">
+            <ul class="nav_listlink">
+                <li class="nav_link nav_link-purple"><a href="cv.html">CV</a></li>
+                <li class="nav_link nav_link-red">Projects</li>
+                <li class="nav_link nav_link-green">Contact</li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <img src="" alt="Ma Photo">
-        <h1>Bienvenue</h1>
-        <h2>A propos de moi</h2>
-        <p>Je suis Michaël et j'ai 29 ans. J'ai travaillé pendant sept ans en hôtellerie et je suis maintenant en formation cette année pour devenir developper web.</p>
-        <div><a href="">Projets</a><a href=""> Contact</a></div>
+        <section class="introduction">
+            <img src="" alt="Ma Photo">
+            <h1>Welcome !</h1>
+            <h2>I am Michaël Degorre</h2>
+            <p>After working seven years in the hospitality industry, i am currently on training to become a web developper.</p>
+        </section>
+        <section class="WebLanguages">
+            <h2>Web Technologies I Am Learning</h2>
+            <div class="WebLanguages-images">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Logo CSS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/131px-Unofficial_JavaScript_logo_2.svg.png" alt="Logo JS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Logo PHP">
+                <img src="https://symfony.com/images/opengraph/symfony.png" alt="Logo Symphony">
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>Email</p>
-        &copy; 2024 par Michaël Degorre
+        &copy; 2024 by Michaël Degorre
     </footer>
 
 </body>
