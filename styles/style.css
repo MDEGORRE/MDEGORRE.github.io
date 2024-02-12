@@ -1,6 +1,9 @@
 body {
+    background-image: url('https://images.pexels.com/photos/290470/pexels-photo-290470.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Inter';
-    background-color: #EAFFF1;
+    background-color: #eafff1;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -9,7 +12,9 @@ body {
 
 header {
     padding: 2em;
-    height: 5vh;
+    height: 3vh;
+    background-color: #aab3b3;
+    opacity: 0.8;
     display: flex;
     margin: auto 0;
     justify-content: space-between;
@@ -26,6 +31,10 @@ header h1 span {
     font-size: 2.5rem;
 }
 
+.header_nav {
+    margin: auto;
+}
+
 .nav_listlink {
     display: flex;
     gap: 3rem;
@@ -33,10 +42,10 @@ header h1 span {
 
 .nav_link {
     text-decoration-line: underline;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-thickness: 0.20rem;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 nav a:visited {
@@ -64,6 +73,7 @@ nav a:visited {
 }
 
 main {
+    font-size: 1.2rem;
     background-color: #f3f3f3;
 }
 
@@ -92,17 +102,30 @@ main {
 /* CSS Style CV Page*/
 
 .main_cv {
+    margin-top: 3rem;
     padding: 2rem;
-    background-color: white;
+    background-color: #fff;
+    opacity: 0.9;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
+.container-left {
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+
 /* CSS Style CV Page: Partie gauche */
 
 .container-left {
     width: 25%;
+    margin: 0rem auto;
+    padding: 1rem 1rem;
+    background-color: #aab3b3;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);
 }
 
 .container-left-image {
@@ -128,12 +151,19 @@ main {
     margin: 1rem 0;
 }
 
+
+
+/* CSS Style CV Page: Partie droite */
+
 .container-right {
     width: 75%;
     margin: 0 auto;
+    background-color: #aab3b3;
+    margin: 0rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);
 }
-
-/* CSS Style CV Page: Partie droite */
 
 .container-right h1 {
     letter-spacing: 0.2rem;
@@ -152,14 +182,83 @@ main {
     margin: 1rem 0;
 }
 
+.cv-workplace {
+    font-style: italic;
+}
+
+.cv_workexperience li {
+    padding-top: 2rem;
+}
+
 /* Footer Style */
 
 footer {
+    text-align: center;
     background-color: black;
     width: 100%;
     position:fixed;
     bottom: 0;
-    text-align: center;
     color:white;
     padding: 0.5rem;
 }
+
+footer p {
+    margin: 0.3rem;
+} 
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 1450px) {
+    
+    .main_cv {
+
+        padding: 0.5rem;
+        gap: 0rem;
+    }
+    
+    }
+    
+    @media screen and (max-width: 1200px) {
+    body {
+        width: 100vw;
+        background: none;
+
+    }
+    
+    header {
+        width: 100%;
+        padding: 1em 0;
+        margin: 0 auto;
+
+    }
+    
+    .main_cv {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem 0;
+        }
+    
+    
+    .container-left {
+        width: 80vw;
+        padding: 1rem 2rem;
+    }
+
+    .container-right {
+        width: 80vw;
+        padding: 1rem 2rem;
+    }
+
+    footer {
+        width: 100vw;
+        position: relative;
+        bottom: 0;
+    }
+    
+    }
+    
