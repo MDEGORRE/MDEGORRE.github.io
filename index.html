@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="author" content="Michael Degorre">
+    <meta name="keywords" content="Compétences, PHP, stage, expérience, CV, Portfolio">
+    <meta name="description" content="Site portfolio de Michael Degorre.">
+    <title>Michael Degorre | Developpeur web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Michael Degorre: Homepage</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+    <div class="container">
 
-    <header>    
-        <nav class="header_nav">
-            <ul class="nav_listlink">
-                <li class="nav_link nav_link-purple"><a href="cv.html">CV</a></li>
-                <li class="nav_link nav_link-red">Projects</li>
-                <li class="nav_link nav_link-green">Contact</li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <nav id="headerSideNav" class="sidenav">
+                <a href="#" class="closeNav" id="closeBtn"></a>
+                <ul>
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </header>
 
-    <main>
-        <section class="introduction">
-            <img src="" alt="Ma Photo">
-            <h1>Welcome !</h1>
-            <h2>I am Michaël Degorre</h2>
-            <p>After working seven years in the hospitality industry, i am currently on training to become a web developper.</p>
-        </section>
-        <section class="WebLanguages">
-            <h2>Web Technologies</h2>
-            <div class="WebLanguages-images">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Logo CSS">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/131px-Unofficial_JavaScript_logo_2.svg.png" alt="Logo JS">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Logo PHP">
-                <img src="https://symfony.com/images/opengraph/symfony.png" alt="Logo Symphony">
-            </div>
-        </section>
+        <main>
+            <section class="intro">
+                <h1>MICHAEL DEGORRE</h1>
+                <p>Développeur Web</p>
+            </section>
 
-    </main>
+            <section id="presentation" class="presentation">
+                <h2>PRESENTATION</h2>
+                <div class="presentation-container">
+                    <div class="parcours">
+                        <h3>Mon parcours</h3>
+                        <p>Après plusieurs années à avoir travaillé dans l'hôtellerie, j'ai entamé une reconversion
+                            professionelle
+                            en 2024. Actuellement en formation développeur PHP (spécialité Symfony) avec O'Clock
+                            &#x1F642;, je
+                            recherche un stage à partir de juillet. Rigoureux et motivé à apprendre, n'hésitez pas à me
+                            contacter.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Compétences</h3>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Bootstrap</div>
+                        <div class="skill">PHP</div>
+                        <div class="skills">Symfony</div>
+                        <div class="skills">SQL / MySQL</div>
+                        <div class="skills">Git / GitHub</div>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 by Michaël Degorre</p>
-        <p><a href="https://twitter.com/DegorreMichael" target="_blank">Twitter</a>
-        <a href="https://github.com/MDEGORRE" target="_blank">GitHub</a></p>
-    </footer>
+            <section id="portfolio" class="portfolio">
+                <h2>PORTFOLIO</h2>
+                <p>Voici les projets sur lesquels j'ai travaillé.</p>
+                <div>En cours</div>
+                <h3>Apothèse O'Clock</h3>
+            </section>
 
+            <section id="contact" class="contact">
+                <h2>CONTACT</h2>
+                <p>Contactez moi via ce formulaire ou envoyez un mail à <a
+                        href=mailto:'degorremichael@gmail.com'>degorremichael@gmail.com</a>. Je vous répondrais dès que
+                    possible.</p>
+                <div id="formContainer">
+                    <form action="" method="post">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" placeholder="Votre nom">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Votre email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="formMessage" col="100" rows="10"
+                            placeholder="Votre message"></textarea>
+                        <button type="submit" class="submitForm">ENVOYER</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <h3>SOCIAL</h3>
+                <a href="https://github.com/MDEGORRE" target="_blank"><img src="images/github-mark-white.png"
+                        alt="Github logo"></a>
+                <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img
+                        src="images/LI-In-Bug.png" alt="Linkedin logo"></a>
+                <a href="https://twitter.com/DegorreMichael" target="_blank"><img src="images/logo-white.png"
+                        alt="X logo"></a>
+                <p>2024. Michael Degorre</p>
+            </footer>
+    </div>
 </body>
+
 </html>

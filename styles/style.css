@@ -1,264 +1,150 @@
 body {
-    background-image: url('https://images.pexels.com/photos/290470/pexels-photo-290470.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Inter';
-    background-color: #eafff1;
-    max-width: 100%;
-    overflow-x: hidden;
+    font-family: 'Barlow';
+    box-sizing: border-box;
+    background-color: #fafafa;
 }
-
-/* Style CSS Index */
 
 header {
-    padding: 2em;
-    height: 3vh;
-    background-color: #aab3b3;
-    opacity: 0.8;
-    display: flex;
-    margin: auto 0;
-    justify-content: space-between;
-}
-
-header h1 {
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-    vertical-align: middle;
-}
-
-header h1 span {
-    font-size: 2.5rem;
-}
-
-.header_nav {
-    margin: auto;
-}
-
-.nav_listlink {
-    display: flex;
-    gap: 3rem;
-}
-
-.nav_link {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.20rem;
-    text-transform: uppercase;
-    font-weight: 700;
+    padding: 2rem 0;    
     font-size: 1.5rem;
+    font-weight: 500;
+    background-color: white;
 }
 
-nav a:visited {
-    color:inherit;
+nav ul{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: black;
 }
 
-.nav_link-white {
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
     color:black;
-    text-decoration-color: black;
+    font-weight: 600;
 }
 
-.nav_link-purple {
-    color:rebeccapurple;
-    text-decoration-color: rebeccapurple;
-}
-
-.nav_link-red {
-    color:rgb(192, 10, 10);
-    text-decoration-color: rgb(192, 10, 10);
-}
-
-.nav_link-green {
-    color:rgb(13, 116, 13);
-    text-decoration-color: rgb(13, 116, 13);
-}
-
-main {
-    font-size: 1.2rem;
-    background-color: #f3f3f3;
-}
-
-.WebLanguages {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(217,167,187,1) 50%, rgba(70,146,162,1) 90%);
+.intro {
+    padding: 25rem 0 30rem;
     text-align: center;
-    background-color: #d4d0d0;
-    padding: 1rem;
+    color:#000;
+    background-image: url('../images/pexels-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.WebLanguages h2 {
-    color: white;
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 3rem;
+}
+
+.presentation {
+    padding: 2rem 1rem;
+    background-color: #fafafa;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.presentation h2, .portfolio h2, .contact h2  {
     font-size: 2rem;
+    font-weight: 550;
+    margin: 0 0 1rem;
+}
+
+.presentation h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.presentation-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contact h2, p {
+    text-align: center;
+}
+
+#formContainer {
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1rem;
+    box-shadow: 0.8rem 0.5rem 0.5rem #b3cccc;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 85%;
+    margin: 0 auto;
+}
+
+input,textarea {
+    border: 1px dotted black;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #f2ffe6;
+    display: block;
+}
+
+label {
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
-.WebLanguages-images {
-    display: flex;
-    justify-content: space-evenly;
-    width:100%;
-    height: 100px;
-    padding: 1.5rem 0;
+textarea {
+    resize: none;
 }
 
-/* CSS Style CV Page*/
-
-.main_cv {
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: #fff;
-    opacity: 0.9;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.container-left {
-    width: 100%;
-    padding: 1rem 3rem;
-}
-
-
-/* CSS Style CV Page: Partie gauche */
-
-.container-left {
-    width: 25%;
-    margin: 0rem auto;
-    padding: 1rem 1rem;
-    background-color: #aab3b3;
-    border-radius: 2rem;
-    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);
-}
-
-.container-left-image {
-    text-align: center;
-    width: 50%;
-    height: auto;
-    border: 3px solid black;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.container-left h2 {
-    font-size: 1.8rem;
-    font-weight: 550;
-    margin: 2rem 0;
-}
-
-.container-left strong {
-    font-weight: bold;
-}
-
-.container-left p {
-    margin: 1rem 0;
-}
-
-
-
-/* CSS Style CV Page: Partie droite */
-
-.container-right {
-    width: 75%;
-    margin: 0 auto;
-    background-color: #aab3b3;
-    margin: 0rem 1rem;
-    padding: 1rem 1rem;
-    border-radius: 2rem;
-    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);
-}
-
-.container-right h1 {
-    letter-spacing: 0.2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 1rem 0;
-}
-
-.container-right h2 {
-    font-size: 1.8rem;
-    font-weight: 550;
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+    color:white;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(68,148,233);
     margin: 1.5rem 0;
 }
 
-.container-right p, .container-right li {
-    margin: 1rem 0;
-}
-
-.cv-workplace {
-    font-style: italic;
-}
-
-.cv_workexperience li {
-    padding-top: 2rem;
-}
-
-/* Footer Style */
-
 footer {
-    text-align: center;
+    padding: 2rem 0;
     background-color: black;
-    width: 100%;
-    position:fixed;
-    bottom: 0;
-    color:white;
-    padding: 0.5rem;
-}
-
-footer p {
-    margin: 0.3rem;
-} 
-
-footer a {
     color: white;
+    text-align: center;
 }
 
-@media screen and (max-width: 1450px) {
-    
-    .main_cv {
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
 
-        padding: 0.5rem;
-        gap: 0rem;
-    }
-    
-    }
-    
-    @media screen and (max-width: 1200px) {
-    body {
-        width: 100vw;
-        background: none;
+footer img {
+    margin: 1rem;
+    max-height: 2rem;
+}
 
-    }
-    
-    header {
-        width: 100%;
-        padding: 1em 0;
-        margin: 0 auto;
-
-    }
-    
-    .main_cv {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 2rem 0;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem 0;
-        }
-    
-    
-    .container-left {
-        width: 80vw;
-        padding: 1rem 2rem;
-    }
-
-    .container-right {
-        width: 80vw;
-        padding: 1rem 2rem;
-    }
-
-    footer {
-        width: 100vw;
-        position: relative;
-        bottom: 0;
-    }
-    
-    }
-    
