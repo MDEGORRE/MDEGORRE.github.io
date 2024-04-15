@@ -13,100 +13,113 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
-    <div class="container">
 
-        <header>
-            <nav id="headerSideNav" class="sidenav">
-                <a href="#" class="closeNav" id="closeBtn"></a>
-                <ul>
-                    <li><a href="#presentation">Presentation</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" id="openBtn">
-                <span class="burger-icon">
+    <header>
+        <div id="root">
+            <div id="topnav" class="topnav">
+                <a id="home_link" class="topnav_link" href="/">HOME</a>
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+                    <a href="">HOME</a>
+                    <a href="#presentation">Présentation</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
                     <span></span>
                     <span></span>
                     <span></span>
-                </span>
-            </a>
-        </header>
+                </a>
 
-        <main>
-            <section class="intro">
-                <h1>MICHAEL DEGORRE</h1>
-                <p>Développeur Web</p>
-            </section>
+                <!-- Responsive Menu -->
+                <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-            <section id="presentation" class="presentation">
-                <h2>PRESENTATION</h2>
-                <div class="presentation-container">
-                    <div class="parcours">
-                        <h3>Mon parcours</h3>
-                        <p>Après plusieurs années à avoir travaillé dans l'hôtellerie, j'ai entamé une reconversion
-                            professionelle
-                            en 2024. Actuellement en formation développeur PHP (spécialité Symfony) avec O'Clock
-                            &#x1F642;, je
-                            recherche un stage à partir de juillet. Rigoureux et motivé à apprendre, n'hésitez pas à me
-                            contacter.</p>
-                    </div>
-                    <div class="skills">
-                        <h3>Compétences</h3>
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">JavaScript</div>
-                        <div class="skill">Bootstrap</div>
-                        <div class="skill">PHP</div>
-                        <div class="skills">Symfony</div>
-                        <div class="skills">SQL / MySQL</div>
-                        <div class="skills">Git / GitHub</div>
-                    </div>
+    <main>
+        <section class="intro">
+            <h1>MICHAEL DEGORRE</h1>
+            <p>Développeur Web</p>
+        </section>
+
+        <section id="presentation" class="presentation">
+            <h2>PRESENTATION</h2>
+            <div class="presentation-container">
+                <div class="parcours">
+                    <h3>Mon parcours</h3>
+                    <p>Après plusieurs années à avoir travaillé dans l'hôtellerie, j'ai entamé une reconversion
+                        professionelle
+                        en 2024. Actuellement en formation développeur PHP (spécialité Symfony) avec O'Clock
+                        &#x1F642;, je
+                        recherche un stage à partir de juillet. Rigoureux et motivé à apprendre, n'hésitez pas à me
+                        contacter.</p>
                 </div>
-            </section>
-
-            <section id="portfolio" class="portfolio">
-                <h2>PORTFOLIO</h2>
-                <p>Voici les projets sur lesquels j'ai travaillé.</p>
-                <div>En cours</div>
-                <h3>Apothèse O'Clock</h3>
-            </section>
-
-            <section id="contact" class="contact">
-                <h2>CONTACT</h2>
-                <p>Contactez moi via ce formulaire ou envoyez un mail à <a
-                        href=mailto:'degorremichael@gmail.com'>degorremichael@gmail.com</a>. Je vous répondrais dès que
-                    possible.</p>
-                <div id="formContainer">
-                    <form action="" method="post">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" placeholder="Votre nom">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Votre email">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="formMessage" col="100" rows="10"
-                            placeholder="Votre message"></textarea>
-                        <button type="submit" class="submitForm">ENVOYER</button>
-                    </form>
+                <div class="skills">
+                    <h3>Compétences</h3>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Bootstrap</div>
+                    <div class="skill">PHP</div>
+                    <div class="skills">Symfony</div>
+                    <div class="skills">SQL / MySQL</div>
+                    <div class="skills">Git / GitHub</div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer>
-                <h3>SOCIAL</h3>
-                <a href="https://github.com/MDEGORRE" target="_blank"><img src="images/github-mark-white.png"
-                        alt="Github logo"></a>
-                <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img
-                        src="images/LI-In-Bug.png" alt="Linkedin logo"></a>
-                <a href="https://twitter.com/DegorreMichael" target="_blank"><img src="images/logo-white.png"
-                        alt="X logo"></a>
-                <p>2024. Michael Degorre</p>
-            </footer>
-    </div>
+        <section id="portfolio" class="portfolio">
+            <h2>PORTFOLIO</h2>
+            <p>Voici les projets sur lesquels j'ai travaillé.</p>
+            <div>En cours</div>
+            <h3>Apothèse O'Clock</h3>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>CONTACT</h2>
+            <p>Contactez moi via ce formulaire ou envoyez un mail à <a
+                    href=mailto:'degorremichael@gmail.com'>degorremichael@gmail.com</a>. Je vous répondrais dès que
+                possible.</p>
+            <div id="formContainer">
+                <form action="" method="post">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Votre email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="formMessage" col="100" rows="10"
+                        placeholder="Votre message"></textarea>
+                    <button type="submit" class="submitForm">ENVOYER</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <h3>SOCIAL</h3>
+            <a href="https://github.com/MDEGORRE" target="_blank"><img src="assets/images/github-mark-white.png"
+                    alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img src="assets/images/LI-In-Bug.png"
+                    alt="Linkedin logo"></a>
+            <a href="https://twitter.com/DegorreMichael" target="_blank"><img src="assets/images/logo-white.png"
+                    alt="X logo"></a>
+            <p>2024. Michael Degorre</p>
+        </footer>
+        <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
