@@ -17,6 +17,127 @@ nav a {
     font-weight: 600;
 }
 
+.intro {
+    padding: 25rem 0 30rem;
+    text-align: center;
+    color:#000;
+    background-image: url('../images/pexels-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 3rem;
+}
+
+.presentation {
+    padding: 2rem 1rem;
+    background-color: #fafafa;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.presentation h2, .portfolio h2, .contact h2  {
+    font-size: 2rem;
+    font-weight: 550;
+    margin: 0 0 1rem;
+}
+
+.presentation h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.presentation-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2, p {
+    text-align: center;
+}
+
+#formContainer {
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1rem;
+    box-shadow: 0.8rem 0.5rem 0.5rem #b3cccc;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 85%;
+    margin: 0 auto;
+}
+
+input,textarea {
+    border: 1px dotted black;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #f2ffe6;
+    display: block;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+    color:white;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(68,148,233);
+    margin: 1.5rem 0;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+footer img {
+    margin: 1rem;
+    max-height: 2rem;
+}
+
 /* ******************** NAV BAR ******************** */
 .topnav {
     display: flex;
@@ -35,6 +156,10 @@ nav a {
     padding: 12px;
     text-decoration: none;
   }
+
+  #topnav_menu a:hover {
+    color: rgb(68,148,233);
+  }
   
   /* hide responsive menu */
   #topnav_hamburger_icon,
@@ -43,6 +168,10 @@ nav a {
   }
   
   @media only screen and (max-width: 600px) {
+
+    header {
+        padding: 0.5rem 0;    
+    }
 
     .topnav {
         justify-content: flex-end;
@@ -215,131 +344,7 @@ nav a {
         padding: 15rem 0 20rem;
     }
 
-  }
-
-.intro {
-    padding: 25rem 0 30rem;
-    text-align: center;
-    color:#000;
-    background-image: url('../images/pexels-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 600px) {
-    .intro {
-        padding: 15rem 0 20rem;
+    footer {
+        padding: 1rem 0;
     }
-}
-
-.intro h1 {
-    font-size: 4rem;
-    font-weight: 550;
-    margin-bottom: 1rem;
-}
-
-.intro p {
-    font-size: 3rem;
-}
-
-.presentation {
-    padding: 2rem 1rem;
-    background-color: #fafafa;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.presentation h2, .portfolio h2, .contact h2  {
-    font-size: 2rem;
-    font-weight: 550;
-    margin: 0 0 1rem;
-}
-
-.presentation h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.presentation-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-}
-
-.portfolio {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.contact {
-    width: 95%;
-    margin: 0 auto;
-}
-
-.contact h2, p {
-    text-align: center;
-}
-
-#formContainer {
-    border-radius: 1rem;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1rem;
-    box-shadow: 0.8rem 0.5rem 0.5rem #b3cccc;
-    margin-bottom: 2rem;
-}
-
-form {
-    width: 85%;
-    margin: 0 auto;
-}
-
-input,textarea {
-    border: 1px dotted black;
-    border-radius: 1rem;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    width: 100%;
-    background-color: #f2ffe6;
-    display: block;
-}
-
-label {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-textarea {
-    resize: none;
-}
-
-button {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1rem;
-    color:white;
-    border: none;
-    border-radius: 1rem;
-    background-color: rgb(68,148,233);
-    margin: 1.5rem 0;
-}
-
-footer {
-    padding: 2rem 0;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-footer h3 {
-    font-size: 1.5rem;
-    font-weight: 550;
-}
-
-footer img {
-    margin: 1rem;
-    max-height: 2rem;
-}
-
+  }
