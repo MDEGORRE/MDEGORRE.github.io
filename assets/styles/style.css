@@ -1,141 +1,219 @@
 body {
-    font-family: 'Barlow';
-    box-sizing: border-box;
-    background-color: #fafafa;
+  font-family: 'Barlow';
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
 header {
-    padding: 2rem 0;    
-    font-size: 1.5rem;
-    font-weight: 500;
-    background-color: white;
+  padding: 2rem 0;    
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: white;
+}
+
+nav ul{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+nav li {
+  margin: 0 1rem;
 }
 
 nav a {
-    text-decoration: none;
-    color:black;
-    font-weight: 600;
+  text-decoration: none;
+  color:black;
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 550;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .intro {
-    padding: 25rem 0 30rem;
-    text-align: center;
-    color:#000;
-    background-image: url('../images/pexels-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 25rem 0 30rem;
+  text-align: center;
+  color:#000;
+  background-image: url('../images/pexels-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .intro h1 {
-    font-size: 4rem;
-    font-weight: 550;
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
 }
 
 .intro p {
-    font-size: 3rem;
+  font-size: 3rem;
 }
+
+/* Presentation */
 
 .presentation {
-    padding: 2rem 1rem;
-    background-color: #fafafa;
-    text-align: center;
-    line-height: 1.5;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #fafafa;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 1500px;
 }
 
-.presentation h2, .portfolio h2, .contact h2  {
-    font-size: 2rem;
-    font-weight: 550;
-    margin: 0 0 1rem;
+#presentation_title {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.portfolio h2, .contact h2  {
+  font-size: 2rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
 }
 
 .presentation h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
-.presentation-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
+/* Compétences */
+
+.parcours, .skills {
+  max-width: 50%;
+}
+
+.skills > ol > div {
+  flex: 1 0 21%;
+}
+
+.skills ol > div > span {
+  font-size: 1.1rem;
+}
+
+.skills ol > div > li > img {
+  max-width: 3.5rem;
+  max-height: 3rem;
+}
+
+.skills ol > div > li {
+  margin: 0 auto;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.skills ol {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.parcours p {
+  text-align: justify;
 }
 
 .portfolio {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
+/* Contact */
+
 .contact {
-    width: 95%;
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .contact h2, p {
-    text-align: center;
+  text-align: center;
 }
 
 #formContainer {
-    border-radius: 1rem;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1rem;
-    box-shadow: 0.8rem 0.5rem 0.5rem #b3cccc;
-    margin-bottom: 2rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: white;
+  border: 1rem;
+  box-shadow: 0.8rem 0.5rem 0.5rem #b3cccc;
 }
 
 form {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 input,textarea {
-    border: 1px dotted black;
-    border-radius: 1rem;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    width: 100%;
-    background-color: #f2ffe6;
-    display: block;
+  border: 1px dotted black;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  background-color: #f2ffe6;
+  display: block;
 }
 
 label {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 textarea {
-    resize: none;
+  resize: none;
+}
+
+#submit_container {
+  display: flex;
+  justify-content: end;
 }
 
 button {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1rem;
-    color:white;
-    border: none;
-    border-radius: 1rem;
-    background-color: rgb(68,148,233);
-    margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+  color:white;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(68,148,233);
+  margin: 1.5rem 0;
 }
 
+/* Footer */
+
 footer {
-    padding: 2rem 0;
-    background-color: black;
-    color: white;
-    text-align: center;
+  padding: 1rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 footer h3 {
-    font-size: 1.5rem;
-    font-weight: 550;
+  font-size: 1.5rem;
+  font-weight: 550;
 }
 
 footer img {
-    margin: 1rem;
-    max-height: 2rem;
+  margin: 1rem;
+  max-height: 2rem;
 }
 
 /* ******************** NAV BAR ******************** */
@@ -171,6 +249,14 @@ footer img {
 
     header {
         padding: 0.5rem 0;    
+    }
+
+    .presentation {
+      display: block;
+    }
+
+    .presentation > div {
+      max-width: 100%;
     }
 
     .topnav {

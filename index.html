@@ -56,29 +56,58 @@
             <p>Développeur Web</p>
         </section>
 
-        <section id="presentation" class="presentation">
-            <h2>PRESENTATION</h2>
-            <div class="presentation-container">
-                <div class="parcours">
-                    <h3>Mon parcours</h3>
-                    <p>Après plusieurs années à avoir travaillé dans l'hôtellerie, j'ai entamé une reconversion
-                        professionelle
-                        en 2024. Actuellement en formation développeur PHP (spécialité Symfony) avec O'Clock
-                        &#x1F642;, je
-                        recherche un stage à partir de juillet. Rigoureux et motivé à apprendre, n'hésitez pas à me
-                        contacter.</p>
-                </div>
-                <div class="skills">
-                    <h3>Compétences</h3>
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">Bootstrap</div>
-                    <div class="skill">PHP</div>
-                    <div class="skills">Symfony</div>
-                    <div class="skills">SQL / MySQL</div>
-                    <div class="skills">Git / GitHub</div>
-                </div>
+        <h2 id="presentation_title">PRESENTATION</h2>
+
+        <section class="presentation">
+            <div class="parcours">
+                <h3>Mon parcours</h3>
+                <p>Après plusieurs années à avoir travaillé dans l'hôtellerie, j'ai entamé une reconversion
+                    professionelle en 2024. Actuellement en formation développeur PHP (spécialité Symfony) avec
+                    O'Clock
+                    &#x1F642;, je
+                    recherche un <strong>stage</strong> de deux mois minimum à partir de fin juillet. Rigoureux et
+                    motivé à
+                    apprendre, n'hésitez pas à me
+                    <strong>contacter</strong> ! Vous pouvez aussi me retrouver sur <a
+                        href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank">Linkedin</a>.
+                </p>
+            </div>
+            <div class="skills">
+                <h3>Compétences</h3>
+                <ol>
+                    <div>
+                        <li><img src="assets/images/skills-logos/HTML5_logo_black.svg" alt="Logo HTML 5">
+                        </li><span>HTML</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/CSS3_logo_and_wordmark.svg" alt="Logo CSS">
+                        </li><span>CSS</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/Bootstrap_logo.svg" alt="Logo Bootstrap">
+                        </li><span>Bootstrap</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/JavaScript-logo.png" alt="Logo Javascript">
+                        </li><span>Javascript</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/PHP-logo.svg" alt="Logo PHP">
+                        </li><span>PHP</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/symfony_black_03.svg" alt="Logo Symfony">
+                        </li><span>Symfony</span>
+                    </div>
+                    <div>
+                        <li><img src="assets/images/skills-logos/Git-Icon-Black.svg" alt="Logo Git">
+                        </li><span>Git</span>
+                    </div>
+                    <div>
+                        <li><img id="github_img" src="assets/images/skills-logos/github-mark.svg" alt="Logo GitHub">
+                        </li><span>GitHub</span>
+                    </div> 
+                </ol>
             </div>
         </section>
 
@@ -91,19 +120,21 @@
 
         <section id="contact" class="contact">
             <h2>CONTACT</h2>
-            <p>Contactez moi via ce formulaire ou envoyez un mail à <a
+            <p>Contactez-moi via ce formulaire ou envoyez-moi un mail à <a
                     href=mailto:'degorremichael@gmail.com'>degorremichael@gmail.com</a>. Je vous répondrais dès que
                 possible.</p>
             <div id="formContainer">
                 <form action="https://formspree.io/f/xgegpgwe" method="post">
                     <label for="name">Nom</label>
-                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="text" name="name" placeholder="Votre nom..." required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="email" name="email" placeholder="Votre email..." required>
                     <label for="message">Message</label>
-                    <textarea name="message" id="formMessage" col="100" rows="10"
-                        placeholder="Votre message" required></textarea>
-                    <button type="submit" class="submitForm">ENVOYER</button>
+                    <textarea name="message" id="formMessage" col="100" rows="10" minlength="50" maxlength="4000" placeholder="Votre message..."
+                        required></textarea>
+                    <div id="submit_container">
+                        <button type="submit" class="submitForm">ENVOYER</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -112,8 +143,8 @@
             <h3>SOCIAL</h3>
             <a href="https://github.com/MDEGORRE" target="_blank"><img src="assets/images/github-mark-white.png"
                     alt="Github logo"></a>
-            <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img src="assets/images/LI-In-Bug.png"
-                    alt="Linkedin logo"></a>
+            <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img
+                    src="assets/images/LI-In-Bug.png" alt="Linkedin logo"></a>
             <a href="https://twitter.com/DegorreMichael" target="_blank"><img src="assets/images/logo-white.png"
                     alt="X logo"></a>
             <p>2024. Michael Degorre</p>
