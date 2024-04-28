@@ -34,7 +34,7 @@ function changeLightMode() {
         document.querySelector('#twitter_logo_dark').hidden = false
 
     } else 
-    icon.src = "assets/images/dark-mode-svgrepo-com.svg"
+    document.querySelector('#dark_mode_toggler').src = "assets/images/dark-mode-svgrepo-com.svg"
 
 }
 
