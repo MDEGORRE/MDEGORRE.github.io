@@ -30,6 +30,7 @@
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
                 </nav>
+                <img src="assets/images/dark-mode-svgrepo-com.svg" id="dark_mode_toggler" alt="moon_icon">
                 <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
                     <!-- Some spans to act as a hamburger -->
                     <span></span>
@@ -104,7 +105,7 @@
                     <div>
                         <li><img id="github_img" src="assets/images/skills-logos/github-mark.svg" alt="Logo GitHub">
                         </li><span>GitHub</span>
-                    </div> 
+                    </div>
                 </ol>
             </div>
         </section>
@@ -128,27 +129,29 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" placeholder="Votre email..." required>
                     <label for="message">Message</label>
-                    <textarea name="message" id="formMessage" col="100" rows="10" minlength="50" maxlength="4000" placeholder="Votre message..."
-                        required></textarea>
+                    <textarea name="message" id="formMessage" col="100" rows="10" minlength="50" maxlength="4000"
+                        placeholder="Votre message..." required></textarea>
                     <div id="submit_container">
                         <button type="submit" class="submitForm">ENVOYER</button>
                     </div>
                 </form>
             </div>
         </section>
-        </main>
+    </main>
 
-        <footer>
-            <h3>SOCIAL</h3>
-            <a href="https://github.com/MDEGORRE" target="_blank"><img src="assets/images/github-mark-white.png"
-                    alt="Github logo"></a>
-            <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img
-                    src="assets/images/LI-In-Bug.png" alt="Linkedin logo"></a>
-            <a href="https://twitter.com/DegorreMichael" target="_blank"><img src="assets/images/logo-white.png"
-                    alt="X logo"></a>
-            <p>2024. Michael Degorre</p>
-        </footer>
-        <script src="assets/scripts/script.js"></script>
+    <footer>
+        <h3>SOCIAL</h3>
+        <a href="https://github.com/MDEGORRE" target="_blank"><img id="github_logo_white" src="assets/images/github-mark-white.png"
+                alt="Github logo"><img id="github_logo_dark" hidden src="assets/images/github-mark.png"
+                alt="Github logo"></a>
+        <a href="https://www.linkedin.com/in/michaël-d-144675297" target="_blank"><img src="assets/images/LI-In-Bug.png"
+                alt="Linkedin logo"></a>
+        <a href="https://twitter.com/DegorreMichael" target="_blank"><img id='twitter_logo_white' src="assets/images/logo-white.png"
+                alt="X logo"> <img id="github_logo_dark" src="assets/images/logo-black.png"
+                alt="X logo"></a>
+        <p>2024. Michael Degorre</p>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
